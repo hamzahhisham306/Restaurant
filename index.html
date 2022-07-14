@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;300&family=Inconsolata:wght@200&family=Splash&display=swap" rel="stylesheet">
+    <style>
+        *{
+         -webkit-box-sizing: border-box;
+         -moz-box-sizing: border-box;
+         box-sizing: border-box;
+         }
+         body{
+
+            font-family: 'Arima', cursive;
+            background-color:#FFBCD1;
+                }
+        .container{
+          padding-top: 15px;
+          padding-left: 15px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        @media (min-width:768px) {
+        .container{
+        width: 750px;
+        }
+    
+       }
+        @media(min-width:992px){
+        .container{
+         width: 970px;
+        }
+        }
+    
+
+         @media (min-width:1200px){
+         .container{
+         width: 1170px;
+         }
+         }
+         header{
+            padding-bottom: 200px;
+         }
+         header nav .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+         header nav .container img{
+            width:145px;
+            border-radius: 20px;
+         }
+         header nav .container ul li{
+            display: inline-block;
+            margin-left: 20px;
+            
+         }
+         @media (max-width:725px){
+            header nav .container ul{
+                display: flex;
+                flex-direction: column;
+            
+            }
+            header nav .container ul li {
+             margin-bottom: 50px;
+            }
+         }
+         header nav .container ul li a{
+            text-decoration: none;
+            background-color: #CE7BB0;
+            padding:15px;
+            border-radius:20px;
+            cursor: pointer;
+            color: #6867AC;
+         }
+         table{
+            border-spacing: 10px;
+            text-align: center;
+            width:700px;
+            border-color: black;
+            border: 1px solid black;
+            color:#6867AC;
+            background-color: #CE7BB0;
+         }
+          #tabel-information{
+            display: flex;
+            justify-content: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+          }
+         tr{
+            border: 1px solid black;
+         }
+         th{
+            border: 1px solid black;
+         }
+         td{
+            border: 1px solid black;
+         }
+         main{
+           margin: 20px auto;
+           text-align: center;
+         }
+      
+         footer .container .content{
+            display: grid;
+            grid-template-columns: repeat(auto-fill ,minmax(250px,1fr));
+            gap: 40px;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+         }
+         footer .container .content ul{
+            display: flex;
+            justify-content:space-evenly;
+         }
+         footer .container .content ul li{
+            list-style-type: none;
+         }
+         footer .container .content ul li a i{
+            color: #A267AC;
+            font-size: 30px;
+         }
+         footer .container .content .text span{
+            color:#A267AC;
+         }
+         footer .container .content .text{
+            color: #6867AC;
+         }
+         footer .container .content .phone i{
+            font-size: 30px;
+            color: #A267AC;
+         }
+         footer .container .content .phone p{
+            color: #A267AC;
+         }
+         main h1{
+            color: #6867AC;
+            padding-bottom: 70px;
+    
+         }
+         main form input{
+            font-size: 30px;
+            font-family: 'Arima', cursive;
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid #6867AC;
+
+         }
+         main form input::placeholder{
+            color:#A267AC;
+         }
+         main form select{
+            font-size: 41px;
+            padding: 10px;
+            font-family: 'Arima', cursive;
+            border-radius: 10px;
+            color:#A267AC;
+            border: 2px solid #6867AC;
+         }
+         main form button{
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: #CE7BB0;
+            color:#6867AC;
+            border:2px solid #A267AC;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <img src="./images.png" alt="">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact with me</a></li>
+                    <li><a href="#">Other Links</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Enter Food information <br> to insert in the table </h1>
+
+        <form id="form">
+            <input type="text" name="foodName" id="foodName" placeholder="Enter Food Name"><br><br><br>
+            <select id="select" name="select">
+                <option>Fruit and vegetables</option>
+                <option>Starchy food.</option>
+                <option>Dairy</option>
+                <option>Protein.</option>
+                <option>Fat</option>
+            </select><br><br><br>
+            <input type="text" name="price" id="price" placeholder="Enter Price"><br><br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="tabel-information">
+
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="content">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100003226523558" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>             
+                               </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100003226523558" target="_blank">
+                            <i class="fa-brands fa-facebook-messenger"></i>                           </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100003226523558" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>                           </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100003226523558" target="_blank">
+                            <i class="fa-brands fa-google"></i>                           </a>
+                    </li>
+                </ul>
+                <div class="text">
+                    &copy; 2022 <span>Hamzah Aldaamas</span> All Right Reserved
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone phone"></i>
+                    <p>+962 0788886547</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://kit.fontawesome.com/f766ed9494.js" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+
+</html>
