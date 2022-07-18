@@ -1,2 +1,0 @@
-# Restaurant
-# Add Local Stroge

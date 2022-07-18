@@ -85,6 +85,7 @@
             border-color: black;
             border: 1px solid black;
             color:#6867AC;
+            margin: 20px auto;
             background-color: #CE7BB0;
          }
           #tabel-information{
@@ -171,6 +172,21 @@
             color:#6867AC;
             border:2px solid #A267AC;
          }
+         #chart{
+            width: 700px;
+            margin: 20px auto;
+         }
+         #bar{
+            width: 700px;
+            margin: 20px auto;
+         }
+         @media(max-width:728px){
+            #chart,#bar{
+               width:500px;
+
+            }
+
+         }
     </style>
 </head>
 <body>
@@ -206,6 +222,12 @@
 
         </div>
     </main>
+    <div id="chart">
+      <canvas id="myChart"></canvas>
+    </div>
+    <div id="bar">
+      <canvas id="Bar"></canvas>
+    </div>
     <footer>
         <div class="container">
             <div class="content">
@@ -240,6 +262,7 @@
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/f766ed9494.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="./statistics.js"></script>
 
 </html>

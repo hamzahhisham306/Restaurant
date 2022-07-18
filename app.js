@@ -48,3 +48,5 @@ function getDataFromLocalStroge() {
     console.log(parsedData)
   }
   getDataFromLocalStroge();
+ 
+ 
